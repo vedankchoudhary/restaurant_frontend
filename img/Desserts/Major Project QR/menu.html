@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Pixel Plates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header with Cart Icon -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-qrcode qr-icon"></i> Pixel Plates
+        </a>
+        <nav>
+            <ul>
+                <li><a href="cart.html" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <button class="category-btn active" data-category="all">All Items</button>
+        <button class="category-btn" data-category="breakfast">Breakfast</button>
+        <button class="category-btn" data-category="lunch & dinner">Lunch & Dinner</button>
+        <button class="category-btn" data-category="snacks">Snacks</button>
+        <button class="category-btn" data-category="desserts">Desserts</button>
+        <button class="category-btn" data-category="Drinks">Drinks</button>
+    </section>
+
+    <!-- Most Picks Section -->
+    <section class="most-picks">
+        <div class="food-grid">
+            <!-- Item 1 -->
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/Aloo_Paratha.jpg" alt="Aloo_Paratha">
+                <div class="food-info">
+                    <h3>Aloo Paratha</h3>
+                    <p>Whole wheat flatbread stuffed with spiced mashed potatoes, served with butter and curd.</p>
+                    <div class="price-add">
+                        <span>₹50.00</span>
+                        <button class="add-to-cart" data-id="1" data-name="Aloo Paratha" data-price="50.00"
+                            data-image="img/Breakfast/Aloo_Paratha.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/paneer paratha.avif" alt="Paneer Paratha">
+                <div class="food-info">
+                    <h3>Paneer Paratha</h3>
+                    <p>Soft wheat flatbread stuffed with spiced crumbled cottage cheese.</p>
+                    <div class="price-add">
+                        <span>₹100.00</span>
+                        <button class="add-to-cart" data-id="2" data-name="Paneer Paratha" data-price="100.00"
+                            data-image="img/Breakfast/paneer paratha.avif">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/lachha paratha.jpg" alt="Lachha Paratha">
+                <div class="food-info">
+                    <h3>Lachha Paratha</h3>
+                    <p>Multi-layered, crispy paratha made with whole wheat and ghee.</p>
+                    <div class="price-add">
+                        <span>₹80.00</span>
+                        <button class="add-to-cart" data-id="3" data-name="Lachha Paratha" data-price="80.00"
+                            data-image="img/Breakfast/lachha paratha.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/chole kulche.jpg" alt="Chole Kulche">
+                <div class="food-info">
+                    <h3>Chole Kulche</h3>
+                    <p> Soft kulcha bread paired with spicy and tangy chickpea curry.</p>
+                    <div class="price-add">
+                        <span>₹85.00</span>
+                        <button class="add-to-cart" data-id="4" data-name="Chole Kulche" data-price="85.00"
+                            data-image="img/Breakfast/chole kulche.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/besanchilla.jpg" alt="Besan Chilla">
+                <div class="food-info">
+                    <h3>Besan Chilla</h3>
+                    <p>A savory pancake made with gram flour, onions, and spices.</p>
+                    <div class="price-add">
+                        <span>₹55.00</span>
+                        <button class="add-to-cart" data-id="5" data-name="Besan Chilla" data-price="55.00"
+                            data-image="img/Breakfast/besanchilla.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/moong-dal-chilla.jpg" alt="Moong Dal Chilla">
+                <div class="food-info">
+                    <h3>Moong Dal Chilla</h3>
+                    <p>Healthy protein-packed pancake made with moong dal batter.</p>
+                    <div class="price-add">
+                        <span>₹75.00</span>
+                        <button class="add-to-cart" data-id="6" data-name="Moong Dal Chilla" data-price="75.00"
+                            data-image="img/Breakfast/moong-dal-chilla.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/gobhi paratha.gif" alt="Gobhi Paratha">
+                <div class="food-info">
+                    <h3>Gobhi Paratha</h3>
+                    <p>Flatbread filled with spiced grated cauliflower, best paired with pickle and curd</p>
+                    <div class="price-add">
+                        <span>₹110.00</span>
+                        <button class="add-to-cart" data-id="7" data-name="Gobhi Paratha" data-price="110.00"
+                            data-image="img/Breakfast/gobhi paratha.gif">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/misalpav.webp" alt="Misal Pav">
+                <div class="food-info">
+                    <h3>Misal Pav</h3>
+                    <p>Spicy sprouted curry with bread</p>
+                    <div class="price-add">
+                        <span>₹120.00</span>
+                        <button class="add-to-cart" data-id="8" data-name="Misal Pav" data-price="120.00"
+                            data-image="img/Breakfast/misalpav.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/Vada-Pav.jpg" alt="Vada Pav">
+                <div class="food-info">
+                    <h3>Vada Pav</h3>
+                    <p>Spicy potato fritter in a bun (Mumbai’s street food).</p>
+                    <div class="price-add">
+                        <span>₹60.00</span>
+                        <button class="add-to-cart" data-id="9" data-name="Vada Pav" data-price="60.00"
+                            data-image="img/Breakfast/Vada-Pav.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/thpla.jpg" alt="Thepla">
+                <div class="food-info">
+                    <h3>Thepla</h3>
+                    <p>Spiced fenugreek flatbread (Gujarati).</p>
+                    <div class="price-add">
+                        <span>₹65.00</span>
+                        <button class="add-to-cart" data-id="10" data-name="Thepla" data-price="65.00"
+                            data-image="img/Breakfast/thpla.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/dhokla.jpg" alt="Dhokla">
+                <div class="food-info">
+                    <h3>Dhokla</h3>
+                    <p> Steamed fermented gram flour snack (Gujarati).</p>
+                    <div class="price-add">
+                        <span>₹110.00</span>
+                        <button class="add-to-cart" data-id="11" data-name="Dhokla" data-price="110.00"
+                            data-image="img/Breakfast/dhokla.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/dosa.jpg" alt="Dosa">
+                <div class="food-info">
+                    <h3>Dosa</h3>
+                    <p>Crispy fermented rice-lentil crepe (plain, masala, rava, etc.).</p>
+                    <div class="price-add">
+                        <span>₹150.00</span>
+                        <button class="add-to-cart" data-id="12" data-name="Dosa" data-price="150.00"
+                            data-image="img/Breakfast/dosa.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/idli.avif" alt="Idli">
+                <div class="food-info">
+                    <h3>Idli</h3>
+                    <p>Steamed rice cakes served with sambar and chutney
+                    </p>
+                    <div class="price-add">
+                        <span>₹140.00</span>
+                        <button class="add-to-cart" data-id="13" data-name="Idli" data-price="140.00"
+                            data-image="img/Breakfast/idli.avif">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/aloo-puri.avif" alt="Aloo Puri">
+                <div class="food-info">
+                    <h3>Aloo Puri</h3>
+                    <p>Deep-fried puris served with a flavorful, spiced potato curry.</p>
+                    <div class="price-add">
+                        <span>₹55.00</span>
+                        <button class="add-to-cart" data-id="14" data-name="Aloo Puri" data-price="55.00"
+                            data-image="img/Breakfast/aloo-puri.avif">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/Khasta-Kachori-Recipe.jpg" alt="Khasta Kachori">
+                <div class="food-info">
+                    <h3>Khasta Kachori</h3>
+                    <p> Flaky, deep-fried kachori with a spiced lentil filling</p>
+                    <div class="price-add">
+                        <span>₹80.00</span>
+                        <button class="add-to-cart" data-id="15" data-name="Khasta Kachori" data-price="80.00"
+                            data-image="img/Breakfast/Khasta-Kachori-Recipe.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="breakfast">
+                <img src="img/Breakfast/poha.webp" alt="Poha">
+                <div class="food-info">
+                    <h3>Poha</h3>
+                    <p>Flattened rice cooked with spices, peanuts, and vegetables</p>
+                    <div class="price-add">
+                        <span>₹60.00</span>
+                        <button class="add-to-cart" data-id="16" data-name="Poha" data-price="60.00"
+                            data-image="img/Breakfast/poha.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Item 2 -->
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/jeera rice.jpg" alt="Jeera Rice">
+                <div class="food-info">
+                    <h3>Jeera Rice</h3>
+                    <p>Fragrant basmati rice with cumin seeds</p>
+                    <div class="price-add">
+                        <span>₹100.00</span>
+                        <button class="add-to-cart" data-id="17" data-name="Jeera rice" data-price="100.00"
+                            data-image="img/Lunch & Dinner/jeera rice.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/biryani.jpg" alt="Biryani">
+                <div class="food-info">
+                    <h3>Biryani</h3>
+                    <p>Aromatic rice with mixed veggies and saffron.</p>
+                    <div class="price-add">
+                        <span>₹150.00</span>
+                        <button class="add-to-cart" data-id="18" data-name="Biryani" data-price="150.00"
+                            data-image="img/Lunch & Dinner/biryani.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/garlic-.jpg" alt="Garlic Naan">
+                <div class="food-info">
+                    <h3>Garlic Naan</h3>
+                    <p>Leavened bread with garlic butter</p>
+                    <div class="price-add">
+                        <span>₹65.00</span>
+                        <button class="add-to-cart" data-id="19" data-name="Garlic Naan" data-price="65.00"
+                            data-image="img/Lunch & Dinner/garlic-.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/missi roti.jpg" alt="Missi Roti">
+                <div class="food-info">
+                    <h3>Missi Roti</h3>
+                    <p>Spiced gram flour flatbread, tandoor-baked, protein-rich
+                    </p>
+                    <div class="price-add">
+                        <span>₹80.00</span>
+                        <button class="add-to-cart" data-id="20" data-name="Missi Roti" data-price="80.00"
+                            data-image="img/Lunch & Dinner/missi roti.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/tandoori-roti.jpg" alt="Tandoori Roti">
+                <div class="food-info">
+                    <h3>Tandoori Roti</h3>
+                    <p>Classic whole wheat bread, clay-oven baked, soft & smoky</p>
+                    <div class="price-add">
+                        <span>₹65.00</span>
+                        <button class="add-to-cart" data-id="21" data-name="Tandoori Roti" data-price="65.00"
+                            data-image="img/Lunch & Dinner/tandoori-roti.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/Rumali-Roti.jpg" alt="Rumali Roti">
+                <div class="food-info">
+                    <h3>Rumali Roti</h3>
+                    <p>Paper-thin, buttery flatbread, tandoor-puffed. Perfect for wraps & curries</p>
+                    <div class="price-add">
+                        <span>₹20.00</span>
+                        <button class="add-to-cart" data-id="22" data-name="Rumali Roti" data-price="20.00"
+                            data-image="img/Lunch & Dinner/Rumali-Roti.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/salad.jpg" alt="Salad">
+                <div class="food-info">
+                    <h3>Salad</h3>
+                    <p>Fresh cucumber-tomato healthy protein salad</p>
+                    <div class="price-add">
+                        <span>₹40.00</span>
+                        <button class="add-to-cart" data-id="23" data-name="Salad" data-price="40.00"
+                            data-image="img/Lunch & Dinner/salad.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/tomato-soup.jpg" alt="Tomato Soup">
+                <div class="food-info">
+                    <h3>Tomato Soup</h3>
+                    <p>Spiced tomato broth</p>
+                    <div class="price-add">
+                        <span>₹100.00</span>
+                        <button class="add-to-cart" data-id="24" data-name="Tomato Soup" data-price="100.00"
+                            data-image="img/Lunch & Dinner/tomato-soup.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/Special-Thali.jpg" alt="Special Thali">
+                <div class="food-info">
+                    <h3>Special Thali</h3>
+                    <p>5-6 items + dessert</p>
+                    <div class="price-add">
+                        <span>₹150.00</span>
+                        <button class="add-to-cart" data-id="25" data-name="Special Thali" data-price="150.00"
+                            data-image="img/Lunch & Dinner/Special-Thali.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/dal makhani.gif" alt="Dal Makhani">
+                <div class="food-info">
+                    <h3>Dal Makhani</h3>
+                    <p>Slow-cooked black lentils with butter and cream</p>
+                    <div class="price-add">
+                        <span>₹115.00</span>
+                        <button class="add-to-cart" data-id="26" data-name="Dal Makhani" data-price="115.00"
+                            data-image="img/Lunch & Dinner/dal makhani.gif">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/chana masala.jpg" alt="Chana Masala">
+                <div class="food-info">
+                    <h3>Chana Masala</h3>
+                    <p> Spicy chickpea curry with onions and tomatoes</p>
+                    <div class="price-add">
+                        <span>₹95.00</span>
+                        <button class="add-to-cart" data-id="27" data-name="Chana Masala" data-price="95.00"
+                            data-image="img/Lunch & Dinner/chana masala.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/Paneer-Butter-Masala.jpg" alt="Paneer Butter Masala">
+                <div class="food-info">
+                    <h3>Paneer Butter Masala</h3>
+                    <p>Creamy tomato-based curry with soft paneer cubes</p>
+                    <div class="price-add">
+                        <span>₹180.00</span>
+                        <button class="add-to-cart" data-id="28" data-name="Paneer Butter Masala" data-price="180.00"
+                            data-image="img/Lunch & Dinner/Paneer-Butter-Masala.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/Malai-Kofta.jpg" alt="Malai Kofta">
+                <div class="food-info">
+                    <h3>Malai Kofta</h3>
+                    <p>Fried paneer-potato dumplings in rich gravy</p>
+                    <div class="price-add">
+                        <span>₹150.00</span>
+                        <button class="add-to-cart" data-id="29" data-name="Malai Kofta" data-price="150.00"
+                            data-image="img/Lunch & Dinner/Malai-Kofta.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/kadhi.jpg" alt="Kadhi">
+                <div class="food-info">
+                    <h3>Kadhi</h3>
+                    <p> Sweet-sour yogurt curry with pakoras</p>
+                    <div class="price-add">
+                        <span>₹130.00</span>
+                        <button class="add-to-cart" data-id="30" data-name="Kadhi" data-price="130.00"
+                            data-image="img/Lunch & Dinner/kadhi.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/mushroom.jpg" alt="Mushroom">
+                <div class="food-info">
+                    <h3>Mushroom</h3>
+                    <p>Wok-tossed mushrooms with bell peppers in aromatic kadai spices</p>
+                    <div class="price-add">
+                        <span>₹245.00</span>
+                        <button class="add-to-cart" data-id="31" data-name="Mushroom" data-price="245.00"
+                            data-image="img/Lunch & Dinner/mushroom.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-item" data-category="lunch & dinner">
+                <img src="img/Lunch & Dinner/Kurkuri-Bhindi.jpg" alt="Kurkuri Bhindi">
+                <div class="food-info">
+                    <h3>Kurkuri Bhindi</h3>
+                    <p>Crispy, golden-fried okra strips tossed with tangy spices</p>
+                    <div class="price-add">
+                        <span>₹100.00</span>
+                        <button class="add-to-cart" data-id="32" data-name="Kurkuri Bhindi" data-price="100.00"
+                            data-image="img/Lunch & Dinner/Kurkuri-Bhindi.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/masala chai.jpg" alt="Chai">
+                <div class="food-info">
+                    <h3>Masala Chai</h3>
+                    <p>A spiced tea brewed with milk, cardamom, ginger, and cloves</p>
+                    <div class="price-add">
+                        <span>₹55.00</span>
+                        <button class="add-to-cart" data-id="33" data-name="Masala Chai" data-price="55.00"
+                            data-image="img/Drinks/masala chai.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/coffee.jpg" alt="Coffe">
+                <div class="food-info">
+                    <h3>Coffee</h3>
+                    <p>Strong, frothy, and served steaming hot in a traditional steel tumbler</p>
+                    <div class="price-add">
+                        <span>₹80.00</span>
+                        <button class="add-to-cart" data-id="34" data-name="Coffee" data-price="80.00"
+                            data-image="img/Drinks/coffee.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/coffee shake.webp" alt="Cold Coffee">
+                <div class="food-info">
+                    <h3>Cold Coffee</h3>
+                    <p>A chilled coffee-based shake with a creamy texture.</p>
+                    <div class="price-add">
+                        <span>₹90.00</span>
+                        <button class="add-to-cart" data-id="35" data-name="Cold Coffee" data-price="90.00"
+                            data-image="img/Drinks/coffee shake.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/vanilla shakes.jpg" alt="Vanilla Shakes">
+                <div class="food-info">
+                    <h3>Vanilla Shake</h3>
+                    <p>Smooth and creamy milkshake with real vanilla flavor</p>
+                    <div class="price-add">
+                        <span>₹110.00</span>
+                        <button class="add-to-cart" data-id="36" data-name="Vanilla Shake" data-price="110.00"
+                            data-image="img/Drinks/vanilla shakes.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/thandai.jpg" alt="Thandai">
+                <div class="food-info">
+                    <h3>Thandai</h3>
+                    <p>A festive drink made with almonds, fennel, and saffron</p>
+                    <div class="price-add">
+                        <span>₹65.00</span>
+                        <button class="add-to-cart" data-id="36" data-name="Thandai" data-price="65.00"
+                            data-image="img/Drinks/thandai.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/sweet-lassi-recipe.webp" alt="Sweet Lassi">
+                <div class="food-info">
+                    <h3>Sweet Lassi</h3>
+                    <p>Thick and creamy yogurt-based drink, sweetened with sugar</p>
+                    <div class="price-add">
+                        <span>₹80.00</span>
+                        <button class="add-to-cart" data-id="37" data-name="Sweet Lassi" data-price="80.00"
+                            data-image="img/Drinks/sweet-lassi-recipe.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/StrawberryMilkshake.webp" alt="StrawberryMilkshake">
+                <div class="food-info">
+                    <h3>Strawberry Milkshake</h3>
+                    <p>Fresh strawberries blended into a delicious shake</p>
+                    <div class="price-add">
+                        <span>₹80.00</span>
+                        <button class="add-to-cart" data-id="38" data-name="Strawberry Milkshake" data-price="80.00"
+                            data-image="img/Drinks/StrawberryMilkshake.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/oreo-milkshake-recipe.jpg" alt="Oreo Milkshake">
+                <div class="food-info">
+                    <h3>Oreo Milkshake</h3>
+                    <p>A creamy shake blended with Oreo cookies</p>
+                    <div class="price-add">
+                        <span>₹130.00</span>
+                        <button class="add-to-cart" data-id="39" data-name="Oreo Milkshake" data-price="130.00"
+                            data-image="img/Drinks/oreo-milkshake-recipe.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/mango lassi.jpg" alt="Mango Lassi">
+                <div class="food-info">
+                    <h3>Mango Lassi</h3>
+                    <p>A summer favorite made with fresh mango pulp</p>
+                    <div class="price-add">
+                        <span>₹85.00</span>
+                        <button class="add-to-cart" data-id="40" data-name="Mango Lassi" data-price="55.00"
+                            data-image="img/Drinks/mango lassi.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/KK Milkshake.avif" alt="Kit-Kat Milkshake">
+                <div class="food-info">
+                    <h3>Kit-Kat Milkshake</h3>
+                    <p>A crunchy shake made with KitKat bars</p>
+                    <div class="price-add">
+                        <span>₹90.00</span>
+                        <button class="add-to-cart" data-id="40" data-name="Kit-Kat Milkshake" data-price="90.00"
+                            data-image="img/Drinks/KK Milkshake.avif">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/Chocolate-Lassi.jpg" alt="Chocolate Shake">
+                <div class="food-info">
+                    <h3>Chocolate Shake</h3>
+                    <p>A bitter-sweet shake for dark chocolate lovers</p>
+                    <div class="price-add">
+                        <span>₹95.00</span>
+                        <button class="add-to-cart" data-id="41" data-name="Chocolate Shake" data-price="95.00"
+                            data-image="img/Drinks/Chocolate-Lassi.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="Drinks">
+                <img src="img/Drinks/badam milk.jpg" alt="Badam Milk">
+                <div class="food-info">
+                    <h3>Badam Milk</h3>
+                    <p>Warm milk flavored with almonds, saffron, and sugar</p>
+                    <div class="price-add">
+                        <span>₹75.00</span>
+                        <button class="add-to-cart" data-id="42" data-name="Badam Milk" data-price="75.00"
+                            data-image="img/Drinks/badam milk.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/Besan-Ladoo.jpg" alt="Besan Ladoo">
+                <div class="food-info">
+                    <h3>Besan Ladoo</h3>
+                    <p>Sweet gram flour balls with ghee, sugar, and cardamom</p>
+                    <div class="price-add">
+                        <span>₹20.00</span>
+                        <button class="add-to-cart" data-id="43" data-name="Besan Ladoo" data-price="20.00"
+                            data-image="img/Desserts/Besan-Ladoo.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/Carrot_Halwa.jpg" alt="Gajar Ka Halwa">
+                <div class="food-info">
+                    <h3>Gajar Ka Halwa</h3>
+                    <p>Grated carrots slow-cooked in ghee, milk, sugar, and nuts</p>
+                    <div class="price-add">
+                        <span>₹50.00</span>
+                        <button class="add-to-cart" data-id="44" data-name="Gajar Ka Halwa" data-price="50.00"
+                            data-image="img/Desserts/Carrot_Halwa.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/choco lava cake.jpg" alt="Choco Lava Cake">
+                <div class="food-info">
+                    <h3>Choco Lava Cake</h3>
+                    <p>Warm chocolate cake with a molten center, served with vanilla ice cream/p>
+                    <div class="price-add">
+                        <span>₹80.00</span>
+                        <button class="add-to-cart" data-id="45" data-name="Choco Lava Cake" data-price="80.00"
+                            data-image="img/Desserts/choco lava cake.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/Falooda.jpg" alt="Falooda">
+                <div class="food-info">
+                    <h3>Falooda</h3>
+                    <p>Creamy rose-scented dessert with vermicelli, basil seeds, and kulfi, topped with nuts</p>
+                    <div class="price-add">
+                        <span>₹90.00</span>
+                        <button class="add-to-cart" data-id="46" data-name="Falooda" data-price="90.00"
+                            data-image="img/Desserts/Falooda.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/Fruit-cream.jpg" alt="Fruit Cream">
+                <div class="food-info">
+                    <h3>Fruit Cream</h3>
+                    <p>Fresh seasonal fruits folded in sweetened whipped cream</p>
+                    <div class="price-add">
+                        <span>₹90.00</span>
+                        <button class="add-to-cart" data-id="47" data-name="Fruit Cream" data-price="90.00"
+                            data-image="img/Desserts/Fruit-cream.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/gulab-jamun.jpg" alt="Gulab Jamun">
+                <div class="food-info">
+                    <h3>Gulab Jamun</h3>
+                    <p>Warm, syrup-soaked dumplings</p>
+                    <div class="price-add">
+                        <span>₹35.00</span>
+                        <button class="add-to-cart" data-id="48" data-name="Gulab Jamun" data-price="35.00"
+                            data-image="img/Desserts/gulab-jamun.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/jalebi.jpg" alt="Jalebi">
+                <div class="food-info">
+                    <h3>Jalebi</h3>
+                    <p> Crispy, coiled deep-fried batter soaked in saffron syrup, served warm</p>
+                    <div class="price-add">
+                        <span>₹110.00</span>
+                        <button class="add-to-cart" data-id="49" data-name="Jalebi" data-price="110.00"
+                            data-image="img/Desserts/jalebi.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/kaju kattli.jpg" alt="Kaju Kattli">
+                <div class="food-info">
+                    <h3>Kaju Kattli</h3>
+                    <p> Diamond-shaped cashew fudge with silver leaf</p>
+                    <div class="price-add">
+                        <span>₹150.00</span>
+                        <button class="add-to-cart" data-id="50" data-name="Kaju Kattli" data-price="150.00"
+                            data-image="img/Desserts/kaju kattli.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/Kheer.jpg" alt="Kheer">
+                <div class="food-info">
+                    <h3>Kheer</h3>
+                    <p>Rice pudding with cardamom, nuts & saffron</p>
+                    <div class="price-add">
+                        <span>₹85.00</span>
+                        <button class="add-to-cart" data-id="51" data-name="Kheer" data-price="85.00"
+                            data-image="img/Desserts/Kheer.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/moong-dal-halwa1.jpg" alt="Moong Dal Halwa">
+                <div class="food-info">
+                    <h3>Moong Dal Halwa</h3>
+                    <p>Slow-cooked mung lentil pudding with ghee, cardamom & nuts</p>
+                    <div class="price-add">
+                        <span>₹130.00</span>
+                        <button class="add-to-cart" data-id="52" data-name="Moong Dal Halwa" data-price="130.00"
+                            data-image="img/Desserts/moong-dal-halwa1.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/Rasgulla.jpg" alt="Rasgulla">
+                <div class="food-info">
+                    <h3>Rasgulla</h3>
+                    <p> Spongy Bengali cottage cheese balls in light sugar syrup</p>
+                    <div class="price-add">
+                        <span>₹85.00</span>
+                        <button class="add-to-cart" data-id="53" data-name="Rasgulla" data-price="85.00"
+                            data-image="img/Desserts/Rasgulla.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="desserts">
+                <img src="img/Desserts/Rasmalai.jpeg" alt="Rasmalai">
+                <div class="food-info">
+                    <h3>Rasmalai</h3>
+                    <p> Flattened paneer discs soaked in sweet, creamy saffron milk</p>
+                    <div class="price-add">
+                        <span>₹60.00</span>
+                        <button class="add-to-cart" data-id="54" data-name="Rasmalai" data-price="60.00"
+                            data-image="img/Desserts/Rasmalai.jpeg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/aloo-tikki.jpg" alt="Aloo Tikki">
+                <div class="food-info">
+                    <h3>Aloo Tikki</h3>
+                    <p> Fried potato patties served with chutneys and yogurt</p>
+                    <div class="price-add">
+                        <span>₹70.00</span>
+                        <button class="add-to-cart" data-id="55" data-name="Aloo Tikki" data-price="70.00"
+                            data-image="img/Snacks/aloo-tikki.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/pizza.jpg" alt="Pizza">
+                <div class="food-info">
+                    <h3>Pizza</h3>
+                    <p> Crispy crust topped with melted cheese, fresh veggies, and tangy sauce</p>
+                    <div class="price-add">
+                        <span>₹220.00</span>
+                        <button class="add-to-cart" data-id="56" data-name="Pizza" data-price="220.00"
+                            data-image="img/Snacks/pizza.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/Bhel-Puri.jpg" alt="Bhel Puri">
+                <div class="food-info">
+                    <h3>Bhel Puri</h3>
+                    <p> Crunchy puffed rice tossed with chutneys, veggies, and sev</p>
+                    <div class="price-add">
+                        <span>₹80.00</span>
+                        <button class="add-to-cart" data-id="57" data-name="Bhel Puri" data-price="80.00"
+                            data-image="img/Snacks/Bhel-Puri.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/pani-puri.jpg" alt="Pani Puri">
+                <div class="food-info">
+                    <h3>Pani Puri</h3>
+                    <p> Crispy puris filled with spicy and tangy flavored wate</p>
+                    <div class="price-add">
+                        <span>₹120.00</span>
+                        <button class="add-to-cart" data-id="58" data-name="Pani Puri" data-price="120.00"
+                            data-image="img/Snacks/pani-puri.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/bread pakoda.jpg" alt="Bread Pakoda">
+                <div class="food-info">
+                    <h3>Bread Pakoda</h3>
+                    <p> Deep-fried bread stuffed with spiced potatoes</p>
+                    <div class="price-add">
+                        <span>₹42.00</span>
+                        <button class="add-to-cart" data-id="59" data-name="Bread Pakoda" data-price="42.00"
+                            data-image="img/Snacks/bread pakoda.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/Paneer-Pakoda.webp" alt="Paneer Pakoda">
+                <div class="food-info">
+                    <h3>Paneer Pakoda</h3>
+                    <p> Cottage cheese slices coated in gram flour batter and deep-fried</p>
+                    <div class="price-add">
+                        <span>₹50.00</span>
+                        <button class="add-to-cart" data-id="60" data-name="Paneer Pakoda" data-price="50.00"
+                            data-image="img/Snacks/Paneer-Pakoda.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/burger.webp" alt="Burger">
+                <div class="food-info">
+                    <h3>Burger</h3>
+                    <p> A crispy vegetable patty in a soft bun with sauces</p>
+                    <div class="price-add">
+                        <span>₹105.00</span>
+                        <button class="add-to-cart" data-id="61" data-name="Burger" data-price="105.00"
+                            data-image="img/Snacks/burger.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/dahi-bhalla.jpg" alt="Dahi Bhalla">
+                <div class="food-info">
+                    <h3>Dahi Bhalla</h3>
+                    <p> Soft lentil dumplings soaked in yogurt, topped with chutneys</p>
+                    <div class="price-add">
+                        <span>₹90.00</span>
+                        <button class="add-to-cart" data-id="62" data-name="Dahi Bhalla" data-price="90.00"
+                            data-image="img/Snacks/dahi-bhalla.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/French-Fries.jpg" alt="french fries">
+                <div class="food-info">
+                    <h3>French fries</h3>
+                    <p> Classic deep-fried potato fries, crispy and salty</p>
+                    <div class="price-add">
+                        <span>₹60.00</span>
+                        <button class="add-to-cart" data-id="63" data-name="french fries" data-price="60.00"
+                            data-image="img/Snacks/French-Fries.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/MASALA-FRIES.webp" alt="Masala Fries">
+                <div class="food-info">
+                    <h3>Masala Fries</h3>
+                    <p> Spiced-up fries with tangy chaat masala</p>
+                    <div class="price-add">
+                        <span>₹135.00</span>
+                        <button class="add-to-cart" data-id="64" data-name="Masala Fries" data-price="135.00"
+                            data-image="img/Snacks/MASALA-FRIES.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/paneer-kathi-roll.jpg" alt="Paneer Roll">
+                <div class="food-info">
+                    <h3>Paneer Roll</h3>
+                    <p> Soft paratha filled with spiced paneer and vegetables</p>
+                    <div class="price-add">
+                        <span>₹195.00</span>
+                        <button class="add-to-cart" data-id="65" data-name="Paneer Roll" data-price="195.00"
+                            data-image="img/Snacks/paneer-kathi-roll.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/Raj kachori.jpg" alt="Raj Kachori">
+                <div class="food-info">
+                    <h3>Raj Kachori</h3>
+                    <p> A large crispy puri filled with yogurt, chutneys, and sprouts</p>
+                    <div class="price-add">
+                        <span>₹180.00</span>
+                        <button class="add-to-cart" data-id="66" data-name="Raj Kachori" data-price="180.00"
+                            data-image="img/Snacks/Raj kachori.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/samosa.jpg" alt="Samosa">
+                <div class="food-info">
+                    <h3>Samosa<h>
+                            <p> Golden-fried pastry filled with spicy potato and paneer stuffing</p>
+                            <div class="price-add">
+                                <span>₹25</span>
+                                <button class="add-to-cart" data-id="67" data-name="Samosa" data-price="25"
+                                    data-image="data-image=">Add to Cart</button>
+                            </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/spring rolls.jpg" alt="Spring Roll">
+                <div class="food-info">
+                    <h3>Spring Roll</h3>
+                    <p> Crispy fried rolls stuffed with spiced veggies, served with tangy dipping sauce.</p>
+                    <div class="price-add">
+                        <span>₹160.00</span>
+                        <button class="add-to-cart" data-id="68" data-name="Spring Roll" data-price="160.00"
+                            data-image="img/Snacks/spring rolls.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/vegetarian-soya-malai-chaap.jpg" alt="Soya Malai Chaap">
+                <div class="food-info">
+                    <h3>Soya Malai Chaap</h3>
+                    <p> Creamy, tandoor-grilled soy chunks in rich malai marinade</p>
+                    <div class="price-add">
+                        <span>₹155.00</span>
+                        <button class="add-to-cart" data-id="69" data-name="Soya Malai Chaap" data-price="155.00"
+                            data-image="img/Snacks/vegetarian-soya-malai-chaap.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="snacks">
+                <img src="img/Snacks/steamed momo.jpg" alt="Steamed Momos">
+                <div class="food-info">
+                    <h3>Steamed Momos</h3>
+                    <p> Delicate dumplings filled with spiced veggies, served with fiery chutney</p>
+                    <div class="price-add">
+                        <span>₹130.00</span>
+                        <button class="add-to-cart" data-id="70" data-name="Steamed Momos" data-price="130.00"
+                            data-image="img/Snacks/steamed momo.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span>$0.00</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

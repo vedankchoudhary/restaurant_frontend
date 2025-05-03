@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Pixel Plates</title>
+    <link rel="stylesheet" href="cart.css">
+   
+</head>
+<body>
+
+    <header>
+        <h1>Your Cart</h1>
+        <a href="menu.html" class="back-btn">Back to Menu</a>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+                <h2>Total Amount: <span class="cart-total">₹0.00</span></h2>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Checkout Modal -->
+<div class="checkout-modal hidden" id="checkoutModal">
+    <div class="checkout-modal-content">
+      <span class="close-btn" id="closeCheckout">&times;</span>
+      <h2>Complete Your Order</h2>
+      <form id="checkoutForm">
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName" required />
+  
+        <label for="customerPhone">Phone Number:</label>
+        <input type="tel" id="customerPhone" required />
+  
+        <label for="seatNumber">Seat Number:</label>
+        <input type="text" id="seatNumber" required />
+  
+        <button type="submit">Place Your Order</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Fake Payment Modal -->
+<div class="payment-modal hidden" id="paymentModal">
+    <div class="payment-modal-content">
+      <span class="close-btn" id="closePayment">&times;</span>
+      <h2>Select Payment Method</h2>
+  
+      <div class="payment-tabs">
+        <button class="payment-tab active" id="creditTab">Credit Card</button>
+        <button class="payment-tab" id="paypalTab">PayPal</button>
+        <button class="payment-tab" id="upiTab">UPI</button>
+      </div>
+  
+      <form id="paymentForm">
+        <!-- Credit Card Fields -->
+<div id="creditFields" class="payment-fields">
+  <label>Card Number:</label>
+  <input type="text" id="cardNumber" placeholder="1234 1234 1234 1234" required>
+
+  <div class="payment-row">
+    <div>
+      <label>Expiration:</label>
+      <input type="text" id="cardExpiry" placeholder="MM / YY" required>
+    </div>
+    <div>
+      <label>CVC:</label>
+      <input type="text" id="cardCVC" placeholder="CVC" required>
+    </div>
+  </div>
+</div>
+
+        <!-- PayPal Notice -->
+        <div id="paypalFields" class="payment-fields hidden">
+          <p>You’ll be redirected to PayPal to complete your payment.</p>
+        </div>
+  
+        <!-- UPI Fields -->
+        <div id="upiFields" class="payment-fields hidden">
+          <label>Select UPI App:</label>
+          <select required>
+            <option value="">--Choose UPI App--</option>
+            <option value="gpay">Google Pay</option>
+            <option value="paytm">Paytm</option>
+            <option value="phonepe">PhonePe</option>
+          </select>
+          <label>UPI ID:</label>
+          <input type="text" placeholder="example@upi" required>
+        </div>
+  
+        <p class="secure-msg">🔒 Secure Payments by Stripe / UPI</p>
+        <button type="submit" class="pay-btn">Pay Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Payment Success Message -->
+<div class="hidden" id="paymentSuccess" style="text-align:center; padding: 2rem;">
+    <h2 style="color: green;">✅ Payment Successful!</h2>
+    <p>Your order has been placed. Thank you!</p>
+  </div>
+  
+  <!-- Payment Modal -->
+<div class="payment-modal hidden" id="paymentModal">
+    <div class="payment-modal-content">
+      <span class="close-btn" id="closePayment">&times;</span>
+      <h2>Choose Payment Method</h2>
+  
+      <div class="payment-tabs">
+        <button class="payment-tab active" data-method="card">Credit Card</button>
+        <button class="payment-tab" data-method="upi">UPI</button>
+      </div>
+  
+      <!-- UPI Fields -->
+      <div class="payment-fields hidden" id="upi-fields">
+        <select id="upiApp">
+          <option value="gpay">Google Pay</option>
+          <option value="paytm">Paytm</option>
+          <option value="phonepe">PhonePe</option>
+        </select>
+        <input type="text" placeholder="Enter UPI ID"  />
+      </div>
+  
+      <button class="pay-btn" id="payButton">Pay</button>
+      <p class="secure-msg">✔ Secure Payment</p>
+    </div>
+  </div>
+  
+
+    <script src="cart.js"></script>
+</body>
+</html>
